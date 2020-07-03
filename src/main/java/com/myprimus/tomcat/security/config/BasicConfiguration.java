@@ -8,10 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration
-@EnableWebSecurity
-public class BasicConfiguration extends WebSecurityConfigurerAdapter {
-    @Override
+/*@Configuration
+@EnableWebSecurity*/
+public class BasicConfiguration /*extends WebSecurityConfigurerAdapter*/ {
+    /*@Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         auth.inMemoryAuthentication()
@@ -31,5 +31,5 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
             .authenticated()
             .and()
             .httpBasic();
-    }
+    }*/
 }
